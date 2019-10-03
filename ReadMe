@@ -1,1 +1,27 @@
-Whats up World!
+components 
+  -Raspberry pi 
+  -Neural Compute Stick 2
+  -pi Camera
+  -Pan / Tilt Servo mount 
+  -External power for the servos 5v 2 amps with common ground as the raspberry pi
+
+servo setup
+  -Center both pan / tilt servo to 90 degrees "center" using a arduino or servo tester
+  -Mount pi camera to pan tilt mount
+
+servo wiring 
+  -Wire Pan Servo signal wire to GPIO 13, Gnd to Raspberry pi Gnd & Power to external 5v 
+  -Wire Tilt Servo signal wire to GPIO 19, Gnd to Raspberry pi Gnd & Power to external 5v 
+
+plugin pi camera to raspberry pi 
+Plug in Neural compute stick 2 into raspberry pi
+Install Openvino for the Neural Compute Stick 2 for Raspbian OS 
+follow the installation Guide https://docs.openvinotoolkit.org/latest/_docs_install_guides_installing_openvino_raspbian.html
+
+download 
+  -face-detection-adas-0001.xml
+  -face-detection-adas-0001.bin
+  
+git clone https://github.com/KerronManwaring/face_tracker
+cd face_tracker
+run python3 face_tracker.py
