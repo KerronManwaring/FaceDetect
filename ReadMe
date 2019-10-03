@@ -1,3 +1,6 @@
+This Project is a Camera that Detects & Tracks Faces Using the Neural Compute Stick 2, Openvino & Opencv on a Rasbperry pi 
+with a pi camera mounted on a Pan Tilt Servo Mount that Follows and Centers on Detected Faces.
+
 components 
   -Raspberry pi 
   -Neural Compute Stick 2
@@ -25,3 +28,4 @@ download
 git clone https://github.com/KerronManwaring/face_tracker
 cd face_tracker
 run python3 face_tracker.py
+
